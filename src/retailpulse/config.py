@@ -9,7 +9,7 @@ DATA_DIR = Path(os.getenv("RETAILPULSE_DATA", ROOT / "data"))
 SAMPLE_DIR = DATA_DIR / "sample"
 ARTIFACT_DIR = Path(os.getenv("RETAILPULSE_ARTIFACTS", ROOT / "artifacts"))
 
-CURRENCY = os.getenv("RETAILPULSE_CURRENCY", "£")  # Online Retail II is in GBP
+CURRENCY = os.getenv("RETAILPULSE_CURRENCY", "₹")  # Online Retail II is in GBP
 
 # Business rules
 CHURN_DAYS = int(os.getenv("RETAILPULSE_CHURN_DAYS", 90))  # no purchase for N days => lapsed

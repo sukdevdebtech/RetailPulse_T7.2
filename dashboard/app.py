@@ -1,4 +1,4 @@
-"""RetailPulse v2 dashboard.   streamlit run dashboard/app.py"""
+"""RetailPulse dashboard.   streamlit run dashboard/app.py"""
 from __future__ import annotations
 
 import sys
@@ -15,7 +15,7 @@ import streamlit as st  # noqa: E402
 from retailpulse import config, inventory, monitoring, pipeline  # noqa: E402
 
 CUR = config.CURRENCY
-st.set_page_config(page_title="RetailPulse v2", page_icon="📊", layout="wide")
+st.set_page_config(page_title="RetailPulse", page_icon="📊", layout="wide")
 
 
 # ------------------------------------------------------------------ data access
@@ -53,7 +53,7 @@ D = load_all(str(art_dir), stamp)
 S = D["summary"]
 
 # ---------------------------------------------------------------------- sidebar
-st.sidebar.title("📊 RetailPulse v2")
+st.sidebar.title("📊 RetailPulse ")
 page = st.sidebar.radio("Navigate", ["Executive Overview", "Sales Analytics", "Customer Intelligence",
                                      "Demand Forecast", "Inventory Planner", "Model Monitoring"])
 st.sidebar.caption(f"Data: {S['source']}")
