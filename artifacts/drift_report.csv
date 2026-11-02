@@ -1,0 +1,4 @@
+feature,psi,ks_stat,ks_pvalue,status,ref_mean,cur_mean
+total_revenue,0.2195,0.2064,1.4e-05,Moderate drift,21627.18,29359.21
+total_quantity,0.296,0.2088,1.1e-05,Significant drift,13299.19,17107.8
+transaction_count,0.2018,0.1871,0.000119,Moderate drift,47.24,58.68

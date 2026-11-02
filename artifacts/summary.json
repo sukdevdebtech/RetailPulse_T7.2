@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "source": "bundled sample (Online Retail II aggregates)",
+  "rows": {
+    "days": 739,
+    "weeks": 104,
+    "customers": 5878
+  },
+  "total_revenue": 17374252.42,
+  "avg_price": 1.6525,
+  "clustering": {
+    "k": 4,
+    "silhouette": 0.3626,
+    "silhouette_by_k": {
+      "3": 0.3453,
+      "4": 0.3626,
+      "5": 0.3469,
+      "6": 0.334
+    }
+  },
+  "churn": {
+    "auc_holdout": 0.7666,
+    "auc_cv5": 0.7585,
+    "avg_precision": 0.7345,
+    "precision@0.5": 0.6967,
+    "recall@0.5": 0.7433,
+    "base_rate": 0.5085,
+    "churn_days": 90,
+    "n_train": 4408,
+    "n_test": 1470
+  },
+  "forecast": {
+    "weights": {
+      "seasonal_naive": 0.3874482853760381,
+      "moving_avg": 0.33205242828562226,
+      "gbm": 0.2804992863383397
+    },
+    "interval_coverage": 0.769,
+    "best_model": "ensemble",
+    "ensemble": {
+      "MAPE": 27.1,
+      "sMAPE": 24.65,
+      "WAPE": 23.12,
+      "MAE": 37040.23,
+      "RMSE": 60671.62
+    }
+  },
+  "inventory": {
+    "plan": {
+      "daily_mean": 14226.86,
+      "daily_std": 12555.1,
+      "annual_demand": 5192803.63,
+      "unit_cost": 1.24,
+      "holding_cost_per_unit": 0.25,
+      "eoq": 45769.8,
+      "safety_stock": 54638.2,
+      "reorder_point": 154226.21,
+      "orders_per_year": 113.45,
+      "annual_ordering_cost": 5672.74,
+      "annual_holding_cost": 19216.53,
+      "service_level": 0.95,
+      "lead_time_days": 7.0
+    },
+    "simulation": {
+      "fill_rate_pct": 97.68,
+      "stockout_days": 13,
+      "trading_days": 604,
+      "orders_placed": 224,
+      "avg_on_hand": 80426.3
+    }
+  },
+  "performance_drift": {
+    "baseline_wape": 23.12,
+    "recent_wape": 13.76,
+    "ratio": 0.6,
+    "retrain_recommended": false
+  },
+  "data_drift_features_flagged": 3,
+  "runtime_seconds": 4.0
+}

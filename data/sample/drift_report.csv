@@ -1,0 +1,6 @@
+Feature,PSI,KS Statistic,KS p-value,Status
+total_revenue,1.0695,0.4561,0.0,Significant Drift
+total_quantity,0.7897,0.4549,0.0,Significant Drift
+transaction_count,1.16,0.4695,0.0,Significant Drift
+unique_customers,1.1773,0.5016,0.0,Significant Drift
+avg_order_value,0.1985,0.2033,0.0024,Moderate

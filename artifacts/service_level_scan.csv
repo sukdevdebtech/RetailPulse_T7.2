@@ -1,0 +1,5 @@
+service_level,safety_stock,reorder_point,eoq,annual_holding_cost,simulated_fill_rate_pct,stockout_days
+0.9,42570,142158,45770,16225,96.69,23
+0.95,54638,154226,45770,19217,97.68,13
+0.98,68221,167809,45770,22583,99.11,6
+0.99,77276,176864,45770,24828,99.2,4

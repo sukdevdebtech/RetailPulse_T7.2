@@ -1,0 +1,4 @@
+# Optional extras: experiment tracking and the Prophet model
+-r requirements.txt
+mlflow>=2.13
+prophet>=1.1

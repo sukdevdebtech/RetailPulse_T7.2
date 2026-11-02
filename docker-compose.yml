@@ -1,0 +1,21 @@
+services:
+  dashboard:
+    build: .
+    ports: ["8501:8501"]
+    volumes: ["./artifacts:/app/artifacts"]
+    restart: unless-stopped
+
+  api:
+    build: .
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports: ["8000:8000"]
+    volumes: ["./artifacts:/app/artifacts"]
+    restart: unless-stopped
+
+  # Optional: browse tracked runs  ->  docker compose --profile mlops up
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    profiles: ["mlops"]
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri /mlruns
+    ports: ["5000:5000"]
+    volumes: ["./artifacts/mlruns:/mlruns"]
