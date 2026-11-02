@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RetailPulse v2 — AI-Powered Customer Analytics & Demand Forecasting
 
 Production-ready upgrade of the RetailPulse prototype (Zidio Data Science & Analytics project).
@@ -95,3 +96,7 @@ Model Monitoring (drift, retrain flag, run history).
 - Inventory is modelled at aggregate level (all units pooled); per-SKU planning needs SKU-level data.
 - LSTM is not part of the default pipeline (it did not beat simple models on 104 points and
   adds a heavy dependency); Prophet is auto-included with `--prophet` when installed.
+=======
+# RetailPulse_T7.2
+AI-Powered Customer Analytics &amp; Demand Forecasting Platform
+>>>>>>> 67ba324155f723a61ca3b3ca1b7411e25e23dad6
